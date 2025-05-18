@@ -17,22 +17,27 @@ const Hero = () => {
           fill="purple"
         />
         <Spotlight className="top-28 left80 h-[80vh] w-[50vw]" fill="cyan" />
-        <BackgroundBeamsWithCollision className="bg-transparent absolute top-0 left-0 w-full h-full flex-col">
-          <h2 className="text-2xl relative z-20 md:text-5xl lg:text-6xl font-bold text-center text-black dark:text-white font-sans tracking-tight pt-10">
-            Hello! My Name is Wahyu Isnantia{" "}
-            <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]"></div>
-          </h2>
-          <TextGenerateEffect
-            className="text-center"
-            words="And I'm a Mobile & Web Developer"
-          />
-          <a href="" className="pt-5">
-            <Magicbutton 
-              title="Show My Work"
-              icon={<FaLocationArrow/>}
-              position="right"
+        <BackgroundBeamsWithCollision className="bg-transparent absolute top-0 left-0 w-full min-h-screen flex flex-col items-center justify-center px-4 text-center z-20">
+          <div className="max-w-3xl w-full px-4 space-y-4">
+            <h2 className="text-xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-black dark:text-white font-sans tracking-tight">
+              Hello! My Name is Wahyu Isnantia
+            </h2>
+
+            <TextGenerateEffect
+              className="text-center"
+              words="And I'm a Mobile & Web Developer"
             />
-          </a>
+
+            <div className="flex justify-center">
+              <a href="#projects">
+                <Magicbutton
+                  title="Show My Work"
+                  icon={<FaLocationArrow />}
+                  position="right"
+                />
+              </a>
+            </div>
+          </div>
         </BackgroundBeamsWithCollision>
         <div className="flex justify-center relative my-20 z-10">
           <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
