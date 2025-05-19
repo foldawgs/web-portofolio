@@ -4,4 +4,4 @@
 2. Deployed in [Vercel](https://vercel.com)
 3. Using [Aceternity](https://ui.aceternity.com) UI Components 
 
-## [Click here to go to my website!](wahyuisnantia.web.id)
+## [Click here to go to my website!](https://wahyuisnantia.web.id)
