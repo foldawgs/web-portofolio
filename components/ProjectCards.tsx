@@ -9,10 +9,10 @@ import { GlowingEffect } from "@/components/ui/glowing-effect";
 
 const ProjectCards = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10 place-items-center gap-2">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10 place-items-center gap-0">
       {projects.map((project, idx) => (
         <CardContainer key={idx} containerClassName="w-full max-w-md">
-          <div className="relative w-80 max-w-md rounded-xl border-2 border-gray-700">
+          <div className="relative w-80 max-w-md rounded-xl border-2 border-gray-200 dark:border-gray-700">
             <GlowingEffect
               glow={true}
               disabled={false}
@@ -21,7 +21,7 @@ const ProjectCards = () => {
               inactiveZone={0.01}
               variant="default"
             />
-            <div className="relative flex h-full flex-col items-center justify-center gap-4 overflow-hidden rounded-xl p-6 bg-gray-100 dark:bg-neutral-900 text-center shadow-lg z-10">
+            <div className="relative flex h-full flex-col items-center justify-center gap-4 overflow-hidden rounded-xl p-6 bg-neutral-100 dark:bg-neutral-900 text-center shadow-lg z-10">
               <CardItem translateZ={100}>
                 <img
                   src={project.image}
