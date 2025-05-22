@@ -12,21 +12,22 @@ const ProjectCards = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10 place-items-center gap-0">
       {projects.map((project, idx) => (
         <CardContainer key={idx} containerClassName="w-full max-w-md">
-          <div className="relative w-80 max-w-md rounded-xl border-2 border-gray-200 dark:border-gray-700">
+          <div className="relative w-80 max-w-md rounded-xl">
             <GlowingEffect
               glow={true}
               disabled={false}
               spread={400}
               proximity={64}
               inactiveZone={0.01}
+              borderWidth = {2}
               variant="default"
             />
-            <div className="relative flex h-full flex-col items-center justify-center gap-4 overflow-hidden rounded-xl p-6 bg-neutral-100 dark:bg-neutral-900 text-center shadow-lg z-10">
+            <div className="relative flex h-full flex-col items-center justify-center gap-4 overflow-hidden rounded-xl p-6 dark:bg-black bg-white text-center shadow-lg z-10">
               <CardItem translateZ={100}>
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-56 object-cover rounded-lg"
+                  className="w-full h-56 object-cover rounded-lg shadow-lg"
                 />
               </CardItem>
               <CardItem

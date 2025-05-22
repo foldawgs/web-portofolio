@@ -25,6 +25,36 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Light Mode Icons */}
+        <link
+          rel="icon"
+          type="image/png"
+          href="/icon_light/favicon-32x32.png"
+          media="(prefers-color-scheme: light)"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/icon_light/apple-touch-icon.png"
+          media="(prefers-color-scheme: light)"
+        />
+
+        {/* Dark Mode Icons */}
+        <link
+          rel="icon"
+          type="image/png"
+          href="/icon_dark/favicon-32x32.png"
+          media="(prefers-color-scheme: dark)"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/icon_dark/apple-touch-icon.png"
+          media="(prefers-color-scheme: dark)"
+        />
+
+        {/* Fallback Icon */}
+        <link rel="icon" href="/icon_light/favicon.ico" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
