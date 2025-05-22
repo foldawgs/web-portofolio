@@ -10,21 +10,22 @@ export default function AboutMeBento() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
       {/* Foto gede kiri */}
-      <div className="relative bg-neutral-100 dark:bg-neutral-900 rounded-xl p-5 flex items-center justify-center shadow-lg backdrop-blur-sm h-full">
+      <div className="relative dark:bg-black bg-white rounded-xl p-5 flex items-center justify-center shadow-lg backdrop-blur-sm h-full">
         <GlowingEffect
           glow={true}
           disabled={false}
-          spread={300}
+          spread={400}
           proximity={64}
           inactiveZone={0.01}
+          borderWidth={2}
           variant="default"
         />
         <Image
           src="/Profile.jpg"
           alt="Foto Wahyu"
-          width={350}
-          height={350}
-          className="rounded-xl object-cover z-10"
+          width={400}
+          height={400}
+          className="rounded-xl object-cover shadow-lg z-10"
         />
       </div>
 
@@ -33,7 +34,7 @@ export default function AboutMeBento() {
         {sections.map((section, i) => (
           <div
             key={i}
-            className="relative bg-neutral-100 dark:bg-neutral-900 rounded-xl p-4 shadow-lg backdrop-blur-sm flex-1"
+            className="relative dark:bg-black bg-white rounded-xl p-4 shadow-lg backdrop-blur-sm flex-1"
           >
             <GlowingEffect
               glow={true}
@@ -43,7 +44,7 @@ export default function AboutMeBento() {
               inactiveZone={0.01}
               variant="default"
             />
-            <div className="relative z-10">
+            <div className="relative z-10 ">
               <h3 className="text-2xl font-semibold text-black dark:text-white mb-1">
                 {section.title}
               </h3>
